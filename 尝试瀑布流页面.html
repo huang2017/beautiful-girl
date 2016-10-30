@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="mobile/css/reset.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- 瀑布流排版插件 -->
+	<script type="text/javascript" src="mobile/js/jquery.masonry.min.js"></script>
+</head>
+<style>
+body{
+	min-width: 320px;
+}
+.container{
+	overflow: hidden;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.container .items{
+	float: left;
+	width: 31%;
+	margin: 8px 0 0 2%;        /*百分数*/
+	position: relative;
+}
+.items span{
+	display: block;
+	padding: 0 8px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+	background: rgba(38,23,15,0.5);
+	position: absolute;
+	bottom: 35px;
+	right: 8px;
+}
+.items img{
+	display: block;
+	width: 100%;         /*百分数*/
+	border-radius: 5px;
+}
+.items p{
+	font-size: 16px;
+	line-height: 20px;
+	height:20px;
+	margin-top: 5px;
+	overflow: hidden;
+	padding: 0 5%;
+}
+</style>
+<body>
+<div class="container">
+	<div id="images">
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/d/25/ea28458647.jpg_195.jpg" alt="">
+			</a>
+			<span>7张</span>
+			<p>温柔美女性感私房照</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/0/46/b288458643.jpg_195.jpg" alt="">
+			</a>
+			<span>15张</span>
+			<p>温柔美女性感私房照</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/1/9a/c39c458637.jpg_195.jpg" alt="">
+			</a>
+			<span>10张</span>
+			<p>2014世界杯足球宝贝美女图片</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/7/21/de16458627.jpg_195.jpg" alt="">
+			</a>
+			<span>21张</span>
+			<p>温柔美女性感私房照</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/d/eb/e1bb458623.jpg_195.jpg" alt="">
+			</a>
+			<span>35张</span>
+			<p>徐冬冬足球宝贝美女图片</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/f/b1/b41e458617.jpg_195.jpg" alt="">
+			</a>
+			<span>3张</span>
+			<p>温柔美女性感私房照</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/4/4e/6d14458609.jpg_195.jpg" alt="">
+			</a>
+			<span>12张</span>
+			<p>手捧花束的清纯美女</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/5/96/bb1f458594.jpg_195.jpg" alt="">
+			</a>
+			<span>11张</span>
+			<p>温柔美女性感私房照</p>
+		</div>
+		<div class="items">
+			<a href="meinv.html"><img src="http://pic1.win4000.com/pic/2/9e/bed2458586.jpg_195.jpg" alt="">
+			</a>
+			<span>26张</span>
+			<p>裴秀智（Suzy）清纯写真</p>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var container=$("#images");
+	container.imagesLoaded(function(){
+		container.masonry({
+			itemSelector:".items",
+			isAnimated:true,
+		})
+	})
+})
+
+</script>
+</body>
+</html>

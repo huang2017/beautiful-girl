@@ -1,0 +1,201 @@
+/*对于body部分来说的话绝对不能设置overflow:hidden;
+这个属性，不然的话会没有滚动条的出现*/
+body{
+	background: #fff;
+	min-width: 320px;
+	max-width: 768px;
+	margin: 0 auto;
+	padding-top:15px;
+}
+.main{
+	width: 100%;          /*百分数*/
+	max-width: 768px;
+	min-height: 250px;
+	margin:0 auto;
+	overflow: hidden;
+}
+/*头部*/
+.header{
+	height: 44px;
+	background: #ffae01;
+	border-bottom: 1px solid #ff9001;
+	position: relative;
+	color:#fff;
+	font-size: 20px;
+	line-height:42px;
+	text-align: center;
+}
+/* 导航栏 */
+#menu{
+	float: right;
+	cursor: pointer;
+	padding: 0 10px;
+	height: 44px;
+	border-left:1px solid red; 
+}
+#menu ins{
+	display: inline-block;
+	margin-left: 4px;
+	width: 0px;
+	height: 0px;
+	border: 6px solid #ffae01;
+	border-top-color:#fff;
+	vertical-align: middle;     /* 这个可以让img本身和块级元素的3px问题清除间隙。 */
+}
+#guide{
+	position: absolute;
+	left: 0px;
+	top: 45px;
+	font-size: 12px;
+	color: #000;
+	text-align: left;
+	line-height: 29px;
+	width: 100%;
+	box-shadow: 0px 2px 2px #787878;
+	background: #fff;
+	z-index: 100;
+	overflow: hidden;
+	display:none;
+}
+#guide dt{
+	font-size: 14px;
+	line-height: 30px;
+	margin: -1px 2% 0;
+	border-top: 1px solid #e1e1e1;
+	padding-top: 4px;
+}
+#guide dd{
+	line-height: 24px;
+	margin: 0 2% 0 -1.6%;
+	padding-bottom: 6px;
+	overflow: hidden;
+}
+#guide dd a{
+	float: left;
+	margin-left: 3.6%;
+	color: #333;
+}
+.logo{
+	height: 30px;
+	margin: 6px 0 0 10px;
+	float: left;
+}
+/*栏目开始*/
+.scroll_title{
+	height: 40px;
+	line-height: 38px;
+	border-top:1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	background: #f5f5f5;
+}
+.scroll_title span{
+	float: left;
+	font-size: 16px;
+	margin: 0 3%;
+	cursor: pointer;
+}
+.scroll_title .active{
+	border-bottom: 2px solid #ff8401;
+	line-height: 36px;
+}
+/*开始图片*/
+.squared,.container{
+	overflow: hidden;
+}
+.squared li{
+	float: left;
+	position: relative;
+	margin: 2% 0 0 2%;        /*百分数*/
+}
+.squared li img{
+	display: block;
+	border-radius: 5px;
+	width: 100%;             /*百分数*/
+}
+.squared li span{
+	display: block;
+	width: 82px;
+	padding-left: 8px;
+	height: 52px;
+	line-height: 72px; 
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	left: 0px;
+	bottom: 0px; 
+	font-weight:bold;           
+}
+.squared .s_xz{
+	width:64%;           /*百分数*/
+}
+.squared .s_xg,.squared .s_qc,.squared .s_sj,.squared .s_pg,.squared .s_zp{
+	width: 31%;         /*百分数*/
+}
+.squared .s_ns{
+	width: 97%;         /*百分数*/
+}
+/*标题*/
+.hd{
+	height: 38px;
+	line-height: 36px;
+	border-left: 5px solid #ff8401;
+	margin-top: 2%;         /*百分数*/
+	background: #f5f5f5;           
+}
+.hd .all{
+	float: right;
+	font-size: 14px;
+	color: #999;
+	margin-right: 10px;
+	line-height: 38px;
+}
+.hd h3{
+	font-size: 16px;
+	border-bottom: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
+	background: #f5f5f5;
+	font-weight:normal;
+	padding-left: 10px;
+	height: 38px;
+}
+/*手机壁纸*/
+/* 下面的部分用到了瀑布流插件 */
+.container .items{
+	float: left;
+	width: 31%;
+	margin: 8px 0 0 2%;        /*百分数*/
+	position: relative;
+}
+.items span{
+	display: block;
+	padding: 0 8px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+	background: rgba(38,23,15,0.5);
+	position: absolute;
+	bottom: 35px;
+	right: 8px;
+}
+.items img{
+	display: block;
+	width: 100%;         /*百分数*/
+	border-radius: 5px;
+}
+.items p{
+	font-size: 16px;
+	line-height: 20px;
+	height:20px;
+	margin-top: 5px;
+	overflow: hidden;
+	padding: 0 5%;
+}
+
+
+
+
+
+
